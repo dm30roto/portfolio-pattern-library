@@ -1,3 +1,496 @@
 /*
- * YOUR STYLES HERE
+                                                ,,            ,,                          ,,
+ .M"""bgd mm                                    db          `7MM        mm         mm   `7MM                                    OO OO OO
+,MI    "Y MM                                                  MM        MM         MM     MM                                    88 88 88
+`MMb.   mmMMmm ,pW"Wq.`7MMpdMAo.     `7Mb,od8 `7MM  .P"Ybmmm  MMpMMMb.mmMMmm     mmMMmm   MMpMMMb.  .gP"Ya `7Mb,od8 .gP"Ya      || || ||
+  `YMMNq. MM  6W'   `Wb MM   `Wb       MM' "'   MM :MI  I8    MM    MM  MM         MM     MM    MM ,M'   Yb  MM' "',M'   Yb     || || ||
+.     `MM MM  8M     M8 MM    M8       MM       MM  WmmmP"    MM    MM  MM         MM     MM    MM 8M""""""  MM    8M""""""     `' `' `'
+Mb     dM MM  YA.   ,A9 MM   ,AP       MM       MM 8M         MM    MM  MM         MM     MM    MM YM.    ,  MM    YM.    ,     ,, ,, ,,
+P"Ybmmd"  `Mbmo`Ybmd9'  MMbmmd'      .JMML.   .JMML.YMMMMMb .JMML  JMML.`Mbmo      `Mbmo.JMML  JMML.`Mbmmd'.JMML.   `Mbmmd'     db db db
+                        MM                         6'     dP
+                      .JMML.                       Ybmmmd'
+
+Pattern Lab doesn't have any CSS requirements, which means you can write your styles however you want. Hooray!
+You can use Sass, Less, vanilla CSS, or some other crazy thing I haven't heard of yet.
+So please don't use these styles. They're just here to put together the demo, and nothing more.
+They're intentionally gray, boring, and crappy because you're supposed to do this stuff yourself.
+
+Atomic design is philosophically complimentary with these CSS approaches:
+
+* SMACSS by Jonathan Snook http://smacss.com/
+* OOCSS by Nicole Sullivan http://oocss.org/
+* BEM CSS Methology : http://bem.info/method/
+* CSS Guidelines by Harry Roberts : https://github.com/csswizardry/CSS-Guidelines
+
+So feel free to use any of these approaches. Or don't. It's totally up to you.
+
+*/
+/*------------------------------------*    $TABLE OF CONTENTS
+    based generally on Harry Roberts excellent CSS Guidelines https://github.com/csswizardry/CSS-Guidelines
+\*------------------------------------*/
+/**
+ * ABSTRACTS..............Declarations of Sass variables and mixins
+ * Mixins.................Mixin styles that are included in the site
+ * Variables..............Variables for styles that are used in the site
+ *
+ * BASE...................Base/reset styles for certain elements
+ * Animation..............Animation base styles
+ * Forms..................Form field base styles
+ * Global Classes.........Base styles used across the entirety of the site
+ * Headings...............Base styles for headings (h1, h2, etc.)
+ * Links..................Base styles for links
+ * Lists..................Base styles lists
+ * Main...................Base styles for main section
+ * Media..................Base styles for various media (videos, iframes, etc.)
+ * Reset..................Reset base styles (i.e. Display block on certain elements)
+ * Tables.................Base styles for tables
+ * Text...................Base styles for text elements
+ *
+ * COMPONENTS.............Styles for certain components
+ * Accordion..............Styles for accordion components
+ * Article................Styles for article components
+ * Blocks.................Styles for block components
+ * Buttons................Styles for button components
+ * Carousels..............Styles for carousels
+ * Comments...............Styles for comments component
+ * Footer.................Styles for the footer component
+ * Forms..................Styles for form components
+ * Header.................Styles for header component
+ * Icons..................Styles for icons
+ * Lists..................Styles for types of lists
+ * Main...................Styles for main section
+ * Messaging..............Styles for alerts/messaging components
+ * Nav....................Styles for navigation components
+ * Sections...............Styles for section components
+ * Tabs...................Styles for tabs
+ * Text...................Styles for text components
+ * Tooltip................Styles for tooltips
+
+ *
+ * LAYOUT.................Styles that affect the site's general layout
+ * Layout.................Layout styles
+ *
+ * UTILITIES..............Styles that require a utility class
+ *
  */
+/*------------------------------------*    $ABSTRACTS
+\*------------------------------------*/
+/*------------------------------------*    #MIXINS
+\*------------------------------------*/
+/** CSS Transition
+ *	Usage: @include transition(width,0.3s,ease-out);
+ */
+/** Rem Unit font sizes with relative fallback http:/seesparkbox.com/foundry/scss_rem_mixin_now_with_a_better_fallback  
+ *	Usage: @include font-size(1, large);
+ */
+/*------------------------------------*    #VARIABLES
+\*------------------------------------*/
+/*------------------------------------*    #COLORS
+\*------------------------------------*/
+/*
+ * 1) Color variables involve a two-tier system to keep colors in sync. The
+ *    first tier defines the brand and neutral colors, and the second tier
+ *    defines the application of those colors.
+ */
+/*
+ * Brand Colors
+ * 1) Brand color variables use English names to define colors to make palettes easier to
+ *    identify. Names are generated using this tool: http://chir.ag/projects/name-that-color/
+ * 2) Brand color variables should typically not be used directly in Sass partials. Instead, use
+ *    second-tier application colors.
+ *
+ */
+.color-brand-primary {
+  background-color: #123938; }
+
+.color-brand-secondary {
+  background-color: #f34d2f; }
+
+/*
+ * Neutral Colors
+ * 1) Neutral color variables use a numbered system to define variables for better maintainability.
+ *    "$color-gray-10" means "10% gray", which is a gray closer to white than to black. For more info
+ *    read https://medium.com/eightshapes-llc/color-in-design-systems-a1c80f65fa3#.brevrq67p
+ */
+/**
+ * Utility Colors
+ * 1) Utility colors are colors used to provide feedback, such as alert messages,
+ * form validation, etc.
+ */
+/*
+  * Text Colors
+  * 1) These are non-linked text colors, such as body copy.
+  */
+/*
+ * Heading Colors
+ * 1) These are non-linked heading colors, such as h2, h3, etc.
+ */
+/*
+ * Text Link Colors
+ * 1) These are for linked text, such as a link found within an article,
+ *    navigation link, footer link, etc.
+ */
+/*
+ * Border Colors
+ * 1) Border colors are used as decoration or dividers, such as as a seperator
+ *    for navigation items, block borders, etc.
+ */
+/*------------------------------------*    #TYPOGRAPHY
+\*------------------------------------*/
+/*------------------------------------*    #LAYOUT
+\*------------------------------------*/
+/**
+ * Spacing Defaults
+ */
+/*------------------------------------*    #BORDERS
+\*------------------------------------*/
+/**
+ * Border Width
+ */
+/**
+ * Border Radius
+ */
+/*------------------------------------*    #ANIMATION
+\*------------------------------------*/
+/**
+ * Animation Duration
+ */
+/**
+ * Animation Easing
+ */
+/*------------------------------------*    #BREAKPOINTS
+\*------------------------------------*/
+/**
+ * Breakpoints
+ */
+/*------------------------------------*    $BASE
+\*------------------------------------
+@import "scss/base/body";
+@import "scss/base/animation";
+@import "scss/base/forms";
+@import "scss/base/global-classes";
+@import "scss/base/headings";
+@import "scss/base/links";
+@import "scss/base/lists";
+@import "scss/base/main";
+@import "scss/base/media";
+@import "scss/base/reset";
+@import "scss/base/tables";
+@import "scss/base/text";
+*/
+/*------------------------------------*    #BODY
+\*------------------------------------*/
+/**
+ * Body base styles
+ */
+body {
+  background: #fff;
+  color: #808080;
+  font: 100%/1.5 "Open Sans", sans-serif;
+  -webkit-text-size-adjust: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column; }
+
+/*------------------------------------*    $COMPONENTS
+\*------------------------------------
+@import "scss/components/blocks";
+@import "scss/components/buttons";
+@import "scss/components/carousels";
+@import "scss/components/footer";
+@import "scss/components/footer-nav";
+@import "scss/components/forms";
+@import "scss/components/fields";
+@import "scss/components/header";
+@import "scss/components/logo";
+@import "scss/components/lists";
+@import "scss/components/messaging";
+@import "scss/components/primary-nav";
+@import "scss/components/nav";
+@import "scss/components/page-header";
+@import "scss/components/sections";
+@import "scss/components/text";
+@import "scss/components/box";
+@import "scss/components/feedback";
+
+*/
+/*------------------------------------*    #BUTTONS
+\*------------------------------------*/
+/**
+ * Button
+ */
+.c-btn {
+  display: inline-block;
+  background: #123938;
+  color: #fff;
+  line-height: 1;
+  font-weight: bold;
+  padding: 1rem 2rem;
+  border: 0;
+  min-width: 64px;
+  border-radius: 2px;
+  text-align: center;
+  transition: background 0.2s ease;
+  border-radius: 2px;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+  /**
+	 * Disabled button
+	 */ }
+  .c-btn:hover, .c-btn:focus {
+    background: #f34d2f;
+    color: #fff; }
+  .c-btn.disabled {
+    background: #d9d9d9;
+    box-shadow: none;
+    color: #808080; }
+
+/**
+ * Small button
+ */
+.c-btn-small {
+  padding: 0.5em; }
+
+/**
+ * Large button
+ */
+.c-btn-large {
+  padding: 0.5em;
+  text-transform: uppercase;
+  background: #808080;
+  font-size: 1.4rem;
+  font-weight: normal; }
+
+/**
+ * Text button
+ */
+.c-text-btn {
+  position: relative;
+  background: none;
+  border: none;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.2rem; }
+  .c-text-btn:after {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    background: url("../../../images/icon-arrowhead.svg") no-repeat;
+    top: 7px;
+    right: -26px;
+    transition: all 0.2s ease; }
+  .c-text-btn:hover, .c-text-btn:focus {
+    color: #444444; }
+    .c-text-btn:hover:after, .c-text-btn:focus:after {
+      right: -28px; }
+  .c-block-media--small .c-text-btn {
+    font-size: 1rem; }
+
+/**
+ * Button on overlay
+ */
+.c-btn--overlay {
+  background: #a5a5a5; }
+
+/*------------------------------------*    #ICONS
+\*------------------------------------*/
+/**
+ * Icon fonts
+ */
+@font-face {
+  font-family: 'icons';
+  src: url("../fonts/icons.eot");
+  src: url("../fonts/icons.eot?#iefix") format("embedded-opentype"), url("../fonts/icons.woff") format("woff"), url("../fonts/icons.ttf") format("truetype"), url("../fonts/icons.svg#icons") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+/**
+ * Use the following CSS code if you want to use data attributes for inserting your icons
+ */
+[data-icon]:before {
+  font-family: 'icons';
+  content: attr(data-icon);
+  speak: none;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased; }
+
+/**
+ * Icons and icon pseudo-elements
+ */
+.icon-twitter:before, .icon-stumbleupon:before, .icon-pinterest:before, .icon-linkedin:before, .icon-google-plus:before, .icon-search:before, .icon-play:before, .icon-menu:before, .icon-arrow-left:before, .icon-arrow-right:before, .icon-bubble:before, .icon-facebook:before, .icon-feed:before, .icon-youtube:before, .icon-tag:before, .icon-tumblr:before, .icon-instagram, .icon-podcast, .icon-apple, .icon-android, .icon-arrow:after, .icon-envelope:before {
+  font-family: 'icons';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased; }
+
+/**
+ * Twitter icon
+ */
+.icon-twitter:before {
+  content: "\74"; }
+
+/**
+ * Stumbleupon icon
+ */
+.icon-stumbleupon:before {
+  content: "\75"; }
+
+/**
+ * Pinterest icon
+ */
+.icon-pinterest:before {
+  content: "\70"; }
+
+/**
+ * LinkedIn icon
+ */
+.icon-linkedin:before {
+  content: "\69"; }
+
+/**
+ * Google plus icon
+ */
+.icon-google-plus:before {
+  content: "\67"; }
+
+/**
+ * Icon search
+ */
+.icon-search:before {
+  content: "\73"; }
+
+/**
+ * Play button icon
+ */
+.icon-play:before {
+  content: "\61"; }
+
+/**
+ * Menu icon
+ */
+.icon-menu:before {
+  content: "\21"; }
+
+/**
+ * Arrow left icon
+ */
+.icon-arrow-left:before {
+  content: "\23"; }
+
+/**
+ * Arrow right icon
+ */
+.icon-arrow-right:before {
+  content: "\24"; }
+
+/**
+ * Bubble icon
+ */
+.icon-bubble:before {
+  content: "\25"; }
+
+/**
+ * Facebook icon
+ */
+.icon-facebook:before {
+  content: "\66"; }
+
+/**
+ * Feed icon
+ */
+.icon-feed:before {
+  content: "\27"; }
+
+/**
+ * YouTube icon
+ */
+.icon-youtube:before {
+  content: "\79"; }
+
+/**
+ * Tag icon
+ */
+.icon-tag:before {
+  content: "\28"; }
+
+/**
+ * Tumblr icon
+ */
+.icon-tumblr:before {
+  content: "\6d"; }
+
+/**
+ * Instagram icon
+ */
+.icon-instagram:before {
+  content: "\22"; }
+
+/**
+ * Podcast icon
+ */
+.icon-podcast:before {
+  content: "\26"; }
+
+/**
+ * Android icon
+ */
+.icon-android:before {
+  content: "\29"; }
+
+/**
+ * Twitter icon
+ */
+.icon-apple:before {
+  content: "\2a"; }
+
+/**
+ * Envelope icon
+ */
+.icon-envelope:before {
+  content: "\2b"; }
+
+/**
+ * Arrow icon
+ */
+.icon-arrow:after {
+  content: "\61";
+  display: inline-block;
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg); }
+
+/**
+ * Play icon
+ */
+.icon-play:before {
+  font-size: 0.7rem;
+  padding-left: 0.2em; }
+
+/**
+ * Play box icon
+ */
+.icon-play-box {
+  display: block;
+  margin-left: 2em; }
+
+/**
+ * Play box icon before
+ */
+.icon-play-box:before {
+  padding: 0.25em;
+  background: #808080;
+  color: #fff;
+  margin-left: -1.7rem;
+  margin-right: 0.5em; }
+
+/*------------------------------------*    $LAYOUT
+\*------------------------------------
+@import "scss/layout/layout";
+*/

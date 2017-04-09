@@ -7,7 +7,8 @@ var gulp = require('gulp'),
   path = require('path'),
   browserSync = require('browser-sync').create(),
   argv = require('minimist')(process.argv.slice(2)),
-  chalk = require('chalk');
+  chalk = require('chalk'),
+  sass = require('gulp-sass');
 
 /**
  * Normalize all paths to be plain, paths with no leading './',
@@ -114,6 +115,17 @@ function build(done) {
   return null;
 }
 
+gulp.task('sass', function(){
+  return gulp.src('./source/css/style.scss')
+    .pipe(sass().on('error', sass.logError)) // Using gulp-sass
+    .pipe(gulp.dest('./source/css/'))
+});
+
+// Need to figure out how to build SASS on changes
+gulp.task('sass:watch', function () {
+  gulp.watch('./source/css/scss/**/*.scss', ['sass']);
+});
+
 gulp.task('pl-assets', gulp.series(
   'pl-copy:js',
   'pl-copy:img',
@@ -148,7 +160,7 @@ gulp.task('patternlab:loadstarterkit', function (done) {
   done();
 });
 
-gulp.task('patternlab:build', gulp.series('pl-assets', build));
+gulp.task('patternlab:build', gulp.series('sass', 'pl-assets', build));
 
 gulp.task('patternlab:installplugin', function (done) {
   patternlab.installplugin(argv.plugin);
@@ -189,6 +201,12 @@ function reloadCSS(done) {
 
 function watch() {
   const watchers = [
+    {
+      name: 'sass',
+      paths: ['./source/css/scss/**/*.scss', '*.scss'],
+      config: { awaitWriteFinish: true },
+      tasks: gulp.series('sass')
+    },
     {
       name: 'CSS',
       paths: [normalizePath(paths().source.css, '**', '*.css')],
