@@ -195,7 +195,6 @@ body {
 /*------------------------------------*    $COMPONENTS
 \*------------------------------------
 @import "scss/components/blocks";
-@import "scss/components/buttons";
 @import "scss/components/carousels";
 @import "scss/components/footer";
 @import "scss/components/footer-nav";
