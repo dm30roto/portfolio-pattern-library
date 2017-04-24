@@ -1,0 +1,13 @@
+/*------------------------------------*\
+    #Animations
+\*------------------------------------*/
+
+/**
+ * Body base styles
+ */
+.animate-fade {
+	transition: all .15s ease-out .2s;
+}
+.animate-fade:hover {
+	opacity: 0.2;
+}

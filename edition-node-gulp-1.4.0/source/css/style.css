@@ -192,6 +192,17 @@ body {
   display: flex;
   flex-direction: column; }
 
+/*------------------------------------*    #Animations
+\*------------------------------------*/
+/**
+ * Body base styles
+ */
+.animate-fade {
+  transition: all .15s ease-out .2s; }
+
+.animate-fade:hover {
+  opacity: 0.2; }
+
 /*------------------------------------*    $COMPONENTS
 \*------------------------------------
 @import "scss/components/blocks";
