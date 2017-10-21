@@ -1,0 +1,321 @@
+/*------------------------------------*\
+    #FORMS
+\*------------------------------------*/
+
+/**
+ * Fieldset base styles
+ */
+fieldset {
+	border: 0;
+	padding: 0;
+	margin: 0;
+}
+
+/**
+ * Label base styles
+ */
+label {
+	display: block;
+	padding-bottom: 0.2rem;
+	font-weight: bold;
+}
+
+/**
+ * Form button, input, select, and text area base styles
+ * 1) Zero out margin and inherit font styles
+ */
+button, input, select, textarea {
+    font-family: inherit;
+    font-size: 100%;
+    margin: 0;
+}
+
+/**
+ * Input and text area base styles
+ * 1) Width entire container, gray border, padding
+ */
+input, textarea, .dropdown select {
+	width: 100%;
+	border: 1px solid $color-gray-35;
+	border-radius: $border-radius;
+	padding: $pad-three-quarters;
+	font-size: $font-size-med;
+
+	&::placeholder {
+		color: $color-gray-35;
+	}
+
+	&:focus {
+		outline: none;
+  	box-shadow: 0 0 2px $color-utility-neutral;
+  	border: 1px solid $color-utility-neutral;
+	}
+}
+
+/**
+ * Input areas base styles
+ * 1) Get rid of webkit appearance of these areas
+ */
+input[type=text], input[type=search], input[type=url], input[type=number], textarea {
+	-webkit-appearance: none;
+}
+
+/**
+ * Button/Submit button base styles
+ */
+button, input[type="submit"] {
+	padding: $pad-half;
+	background: $color-gray-73;
+	border: 1px solid $color-gray-50;
+	cursor: pointer;
+}
+
+/**
+ * Checkboxes/Radio button base styles
+ */
+input[type="checkbox"],
+input[type="radio"] {
+    width: auto;
+    margin-right: 0.3em;
+}
+
+/**
+ * Search cancel button and search decoration webkit appearance none
+ */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+
+/**
+* Select base styles
+* https://uxplanet.org/ux-design-drop-downs-in-forms-c6943ec30037
+*/
+.dropdown select {
+  background:transparent;
+	width: 100%;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  text-indent: 0.01px;
+  text-overflow: '';
+}
+
+.dropdown{
+	overflow: hidden;
+	background: no-repeat right $color-white;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown:before {
+  content: "";
+  position: absolute;
+  right: 12px;
+  top: 20px;
+	width: 0;
+	height: 0;
+	border-left: 6px solid transparent;
+	border-right: 6px solid transparent;
+	border-top: 6px solid $color-gray-65;
+}
+
+/**
+ * Radio button styles
+ * https://uxplanet.org/radio-buttons-ux-design-588e5c0a50dc
+ */
+.radio {
+  margin: 0.5rem;
+  input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+    + .radio-label {
+      &:before {
+        content: '';
+        background: $color-gray-02;
+        border-radius: 100%;
+        border: 1px solid $color-gray-35;
+        display: inline-block;
+        width: 1.2em;
+        height: 1.2em;
+        position: relative;
+        top: 0;
+        margin-right: 1em;
+        vertical-align: top;
+        cursor: pointer;
+        text-align: center;
+        transition: all 250ms ease;
+      }
+    }
+    &:checked {
+      + .radio-label {
+        &:before {
+          background-color: $color-utility-neutral;
+          box-shadow: inset 0 0 0 4px $color-gray-02;
+        }
+      }
+    }
+    &:focus {
+      + .radio-label {
+        &:before {
+          outline: none;
+          border-color: $color-utility-neutral;
+        }
+      }
+    }
+    &:disabled {
+      + .radio-label {
+        &:before {
+          box-shadow: inset 0 0 0 4px $color-gray-15;
+          border-color: $color-gray-35;
+          background: $color-gray-15;
+        }
+      }
+			&:checked {
+				+ .radio-label {
+					&:before {
+						box-shadow: inset 0 0 0 4px $color-gray-15;
+						border-color: $color-gray-35;
+						background: $color-gray-35;
+					}
+				}
+			}
+    }
+    + .radio-label {
+      &:empty {
+        &:before {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}
+.radio-label {
+	cursor: pointer;
+}
+
+/**
+ * Checkbox styles
+ * https://uxplanet.org/radio-buttons-ux-design-588e5c0a50dc
+ */
+ /*Checkboxes styles*/
+ input[type="checkbox"] { display: none; }
+
+ input[type="checkbox"] + label {
+   display: block;
+   position: relative;
+   padding-left: 35px;
+   margin-bottom: 20px;
+   cursor: pointer;
+   -webkit-user-select: none;
+   -moz-user-select: none;
+   -ms-user-select: none;
+ }
+
+ input[type="checkbox"] + label:last-child { margin-bottom: 0; }
+
+ input[type="checkbox"] + label:before {
+   content: '';
+   display: block;
+   width: 20px;
+   height: 20px;
+   border: 2px solid $color-gray-35;
+   position: absolute;
+   left: 0;
+   top: 0;
+   opacity: .6;
+   -webkit-transition: all .12s, border-color .08s;
+   transition: all .12s, border-color .08s;
+ }
+
+ input[type="checkbox"]:checked + label:before {
+   width: 10px;
+   top: -5px;
+   left: 5px;
+   border-radius: 0;
+   opacity: 1;
+	 border: 2px solid $color-utility-neutral;
+   border-top-color: transparent;
+   border-left-color: transparent;
+   -webkit-transform: rotate(45deg);
+   transform: rotate(45deg);
+ }
+
+ input[type="checkbox"]:disabled + label:before {
+	 border-color: $color-gray-35;
+	 background: $color-gray-15;
+ }
+ input[type="checkbox"]:disabled:checked + label:before {
+	 border-color: $color-gray-35;
+	 background: transparent;
+	 border-top-color: transparent;
+   border-left-color: transparent;
+ }
+
+ /**
+  * Toggle styles
+  * https://uxplanet.org/radio-buttons-ux-design-588e5c0a50dc
+  */
+	.switch {
+	  position: relative;
+	  display: inline-block;
+	  width: 60px;
+	  height: 34px;
+	}
+
+	.switch input {display:none;}
+
+	.slider {
+	  position: absolute;
+	  cursor: pointer;
+	  top: 0;
+	  left: 0;
+	  right: 0;
+	  bottom: 0;
+	  background-color: $color-gray-15;
+	  -webkit-transition: .4s;
+	  transition: .4s;
+	}
+
+	.slider:before {
+	  position: absolute;
+	  content: "";
+	  height: 26px;
+	  width: 26px;
+	  left: 4px;
+	  bottom: 4px;
+	  background-color: white;
+	  -webkit-transition: .4s;
+	  transition: .4s;
+	}
+
+	input:checked + .slider {
+	  background-color: $color-utility-neutral;
+	}
+
+	input:focus + .slider {
+	  box-shadow: 0 0 1px $color-utility-neutral;
+	}
+
+	input:checked + .slider:before {
+	  -webkit-transform: translateX(26px);
+	  -ms-transform: translateX(26px);
+	  transform: translateX(26px);
+	}
+	input:checked:disabled + .slider {
+		background: $color-gray-15;
+	}
+
+	input:disabled + .slider:before {
+		background: $color-gray-35;
+	}
+
+	/* Rounded sliders */
+	.slider.round {
+	  border-radius: 34px;
+	}
+
+	.slider.round:before {
+	  border-radius: 50%;
+	}

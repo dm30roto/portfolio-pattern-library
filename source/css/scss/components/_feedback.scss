@@ -1,0 +1,135 @@
+/*------------------------------------*\
+    #FEEDBACK
+\*------------------------------------*/
+
+/**
+ * 1) Feedback consists of components that give information back to the user. Examples include progress bars, progress wheels, etc.
+ */
+
+
+ /**
+ * Progress bar
+ * In depth on styling HTML5 progress bars - https://css-tricks.com/html5-progress-element/ , https://css-tricks.com/html5-progress-element/
+ */
+
+ /* Polyfill */
+ progress[role]:after {
+ 	background-image: none; /* removes default background from polyfill */
+ }
+
+ /* Ensure fallback text doesn't appear in polyfill */
+ progress[role] strong {
+ 	display: none;
+ }
+
+ .c-progress {
+   -webkit-appearance: none;
+    appearance: none;
+    //border: 1px solid rgba(0, 0, 0, 0.5);
+    border: none;
+    background-size: auto;
+    background: $color-gray-15;
+    background-size: auto;
+    width: 100%;
+    max-width: 300px;
+    height: 0.5rem;
+    //border-radius: $border-radius;
+    margin-bottom: 1em;
+  }
+
+  .c-progress progress:not([value]) {
+     background: $color-gray-15;
+     opacity: 0.7;
+   }
+
+ /**
+ * Webkit specific styling
+ */
+ .c-progress {
+   &::-webkit-progress-value {
+     background-size: 300px 50px;
+   }
+
+   &.start::-webkit-progress-value {
+   	width: 0% !important;
+   	background: $color-gray-15  !important;
+   }
+   &[value]::-webkit-progress-bar {
+     background: $color-gray-15  !important;
+   }
+   &.color-utility-neutral::-webkit-progress-value {
+     background: $color-utility-neutral;
+   }
+   &.color-utility-positive::-webkit-progress-value {
+     background: $color-utility-positive;
+   }
+   &.color-utility-negative::-webkit-progress-value {
+     background: $color-utility-negative;
+   }
+ }
+
+ .anim::-webkit-progress-value {
+ 	-webkit-transition: width 4s ease;
+ 		-o-transition: width 4s ease;
+   	transition: width 4s ease;
+ }
+
+ /**
+ * Mozilla specific styling
+ */
+
+.c-progress {
+  &.start::-moz-progress-bar {
+  	width: 0% !important;
+  	background: $color-gray-15 !important;
+  }
+  &.color-utility-neutral::-moz-progress-bar {
+      background: $color-utility-neutral !important;
+  }
+  &.color-utility-positive::-moz-progress-bar {
+      background: $color-utility-positive !important;
+  }
+  &.color-utility-negative::-moz-progress-bar {
+      background: $color-utility-negative !important;
+  }
+  &.anim::-moz-progress-bar {
+  	-moz-transition: width 4s ease;
+  }
+}
+
+/**
+* Spinner
+*/
+.loader {
+  border: 8px solid $color-gray-15;
+  border-radius: 50%;
+  border-top: 8px solid $color-utility-neutral;
+  width: 80px;
+  height: 80px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+.loader-small {
+  border-width: 4px;
+  border-top-width: 4px;
+  width: 40px;
+  height: 40px;
+}
+
+.loader-large {
+  border-width: 8px;
+  border-top-width: 8px;
+  width: 120px;
+  height: 120px;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}

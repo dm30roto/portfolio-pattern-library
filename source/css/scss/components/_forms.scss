@@ -1,0 +1,48 @@
+/*------------------------------------*\
+    #FORMS
+\*------------------------------------*/
+
+/**
+ * Guide on designing good forms:
+ * https://uxplanet.org/designing-perfect-text-field-clarity-accessibility-and-user-effort-d03c1e26004b
+ * https://www.nngroup.com/articles/web-form-design/
+ * https://www.amazon.com/dp/B004VFUP2I/ref=wl_it_dp_o_pC_nS_ttl?_encoding=UTF8&colid=3HL4UMCUYPBTO&coliid=I2VFXTD0C3NH6V
+ * https://www.amazon.com/dp/1558607102?tag=useitcomusablein
+ */
+
+/**
+ * Search form
+ */
+.c-search-form {
+	display: none;
+
+	&--is-active {
+		display: block;
+	    position: absolute;
+		top: 67px;
+		right: 2px;
+		width: 100%;
+		padding: 1em;
+		box-shadow: 0px 3px 5px -2px rgba(0,0,0,0.2);
+		background: $color-white;
+		z-index: 1;
+	}
+
+	@media all and (min-width: $bp-small-2) {
+		display: block;
+	}
+}
+
+/**
+ * Search input
+ */
+.c-search-form__input {
+	padding: 0.5rem;
+}
+
+/**
+ * Stacked form button wrapper
+ */
+.c-form__actions {
+	margin-bottom: 2rem;
+}
