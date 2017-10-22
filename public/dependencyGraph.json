@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "timestamp": 1508630324875,
+  "timestamp": 1508632566881,
   "graph": {
     "options": {
       "directed": true,
@@ -27,13 +27,19 @@
         }
       },
       {
-        "v": "00-atoms/00-global/03-fonts.mustache",
+        "v": "00-atoms/00-global/03-brand-digital-blue.mustache",
         "value": {
           "compileState": "clean"
         }
       },
       {
-        "v": "00-atoms/00-global/04-animations.mustache",
+        "v": "00-atoms/00-global/04-fonts.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "00-atoms/00-global/05-animations.mustache",
         "value": {
           "compileState": "clean"
         }

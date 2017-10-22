@@ -17,13 +17,13 @@
 	font-weight: 500;
 
 	&:hover, &:focus, &.hover-state {
-		@include bg-color-darken-10($color-brand-gray-dark);
+		@include bg-color-darken-10($color-brand-secondary);
 		color: $color-white;
 		outline: none;
 	}
 
 	&:active, &.active-state {
-		@include bg-color-darken-15($color-brand-gray-dark);
+		@include bg-color-darken-15($color-brand-secondary);
 		box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
 	}
 
@@ -35,15 +35,15 @@
 }
 
 .c-btn--default {
-	background: $color-brand-gray-dark;
+	background: $color-brand-secondary;
 	color: $color-white;
 
 	&:hover, &:focus, &.hover-state {
-		@include bg-color-darken-10($color-brand-gray-dark);
+		@include bg-color-darken-10($color-brand-secondary);
 	}
 
 	&:active, &.active-state {
-		@include bg-color-darken-15($color-brand-gray-dark);
+		@include bg-color-darken-15($color-brand-secondary);
 	}
 
 	&.disabled, &.disabled-state {
@@ -53,15 +53,15 @@
 }
 
 .c-btn--primary {
-	background: $color-brand-blue;
+	background: $color-brand-primary;
 	color: $color-white;
 
 	&:hover, &:focus, &.hover-state {
-		@include bg-color-darken-10($color-brand-blue);
+		@include bg-color-darken-10($color-brand-primary);
 	}
 
 	&:active, &.active-state {
-		@include bg-color-darken-15($color-brand-blue);
+		@include bg-color-darken-15($color-brand-primary);
 	}
 
 	&.disabled, &.disabled-state {

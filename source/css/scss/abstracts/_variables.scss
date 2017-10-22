@@ -26,12 +26,14 @@
  *    second-tier application colors.
  *
  */
- $color-brand-blue: #049FD9;
- $color-brand-gray-dark: #58585b;
+ $color-brand-primary: #4DC5E2;
+ $color-brand-secondary: #ED3066;
 
- .color-brand-blue { color: $color-brand-blue; background-color: $color-brand-blue;  }
- .color-brand-gray-dark { color: $color-brand-gray-dark; background-color: $color-brand-gray-dark;  }
+ .color-brand-primary { color: $color-brand-primary; background-color: $color-brand-primary;  }
+ .color-brand-secondary { color: $color-brand-secondary; background-color: $color-brand-secondary;  }
 
+ $color-digital-blue: #183ECB;
+ .color-digital-blue { color: $color-digital-blue; background-color: $color-digital-blue;  }
 /*
  * Neutral Colors
  * 1) Neutral color variables use a numbered system to define variables for better maintainability.
@@ -39,14 +41,14 @@
  *    read https://medium.com/eightshapes-llc/color-in-design-systems-a1c80f65fa3#.brevrq67p
  */
 $color-white: #fff;
-$color-gray-02: #f7f9f9;
-$color-gray-15: #d9d9d9;
-$color-gray-35: #a5a5a5;
-$color-gray-50: #808080;
-$color-gray-65: #595959;
-$color-gray-73: #444444;
-$color-gray-87: #222222;
-$color-black: #000;
+$color-black: #333;
+$color-gray-02: lighten($color-black, 75%);
+$color-gray-15: lighten($color-black, 70%);
+$color-gray-35: lighten($color-black, 65%);
+$color-gray-50: lighten($color-black, 50%);
+$color-gray-65: lighten($color-black, 35%);
+$color-gray-73: lighten($color-black, 27%);
+$color-gray-87: lighten($color-black, 13%);
 
 .color-white { background: $color-white; }
 .color-gray-02 { background: $color-gray-02; }

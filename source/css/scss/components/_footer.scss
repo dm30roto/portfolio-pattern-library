@@ -8,7 +8,7 @@
 .c-footer {
 	clear: both;
 	overflow: hidden;
-	background: $color-brand-gray-dark;
+	background: $color-brand-secondary;
 	color: $color-white;
 	line-height: 1.2;
 	padding: 1em 0;
@@ -19,11 +19,11 @@
  */
 .c-footer__info {
 	max-width: 40em;
-	
+
 	a {
 		color: $color-gray-15;
 		text-decoration: underline;
-		
+
 		&:hover, &:focus {
 			text-decoration: none;
 		}

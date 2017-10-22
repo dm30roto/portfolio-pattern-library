@@ -71,7 +71,7 @@
 
 	&:hover, &:focus {
 		.c-block-media__headline {
-			color: $color-brand-blue;
+			color: $color-brand-primary;
 		}
 	}
 
@@ -146,11 +146,11 @@
     overflow: hidden;
     border-radius: $border-radius;
 }
- 
+
 /**
  *  Tout image
  */
- 
+
  .c-block-tout__img {
 	 display: block;
  }
