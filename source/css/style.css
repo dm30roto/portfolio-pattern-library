@@ -164,12 +164,12 @@ So feel free to use any of these approaches. Or don't. It's totally up to you.
  *
  */
 .color-brand-primary {
-  color: #4DC5E2;
-  background-color: #4DC5E2; }
-
-.color-brand-secondary {
   color: #ED3066;
   background-color: #ED3066; }
+
+.color-brand-secondary {
+  color: #4DC5E2;
+  background-color: #4DC5E2; }
 
 .color-digital-blue {
   color: #183ECB;
@@ -184,10 +184,10 @@ So feel free to use any of these approaches. Or don't. It's totally up to you.
 .color-white {
   background: #fff; }
 
-.color-gray-02 {
+.color-gray-25 {
   background: #f2f2f2; }
 
-.color-gray-15 {
+.color-gray-30 {
   background: #e6e6e6; }
 
 .color-gray-35 {
@@ -947,7 +947,7 @@ abbr {
   display: flex;
   transition: all 0.2s ease; }
   .c-block-media:hover .c-block-media__headline, .c-block-media:focus .c-block-media__headline {
-    color: #4DC5E2; }
+    color: #ED3066; }
   .c-block-media--small {
     font-size: 0.875rem; }
 
@@ -1094,11 +1094,11 @@ abbr {
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
   font-weight: 500; }
   .c-btn:hover, .c-btn:focus, .c-btn.hover-state {
-    background-color: #d7134b;
+    background-color: #23b5d9;
     color: #fff;
     outline: none; }
   .c-btn:active, .c-btn.active-state {
-    background-color: #c01143;
+    background-color: #20a3c3;
     box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.2); }
   .c-btn.disabled, .c-btn.disabled-state {
     background: #e6e6e6;
@@ -1106,23 +1106,23 @@ abbr {
     box-shadow: none; }
 
 .c-btn--default {
-  background: #ED3066;
+  background: #4DC5E2;
   color: #fff; }
   .c-btn--default:hover, .c-btn--default:focus, .c-btn--default.hover-state {
-    background-color: #d7134b; }
+    background-color: #23b5d9; }
   .c-btn--default:active, .c-btn--default.active-state {
-    background-color: #c01143; }
+    background-color: #20a3c3; }
   .c-btn--default.disabled, .c-btn--default.disabled-state {
     background: #e6e6e6;
     color: #b3b3b3; }
 
 .c-btn--primary {
-  background: #4DC5E2;
+  background: #ED3066;
   color: #fff; }
   .c-btn--primary:hover, .c-btn--primary:focus, .c-btn--primary.hover-state {
-    background-color: #23b5d9; }
+    background-color: #d7134b; }
   .c-btn--primary:active, .c-btn--primary.active-state {
-    background-color: #20a3c3; }
+    background-color: #c01143; }
   .c-btn--primary.disabled, .c-btn--primary.disabled-state {
     background: #e6e6e6;
     color: #b3b3b3; }
@@ -1246,7 +1246,7 @@ abbr {
 .c-footer {
   clear: both;
   overflow: hidden;
-  background: #ED3066;
+  background: #4DC5E2;
   color: #fff;
   line-height: 1.2;
   padding: 1em 0; }

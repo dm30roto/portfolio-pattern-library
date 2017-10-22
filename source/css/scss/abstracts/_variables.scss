@@ -26,8 +26,8 @@
  *    second-tier application colors.
  *
  */
- $color-brand-primary: #4DC5E2;
- $color-brand-secondary: #ED3066;
+ $color-brand-primary: #ED3066;
+ $color-brand-secondary: #4DC5E2;
 
  .color-brand-primary { color: $color-brand-primary; background-color: $color-brand-primary;  }
  .color-brand-secondary { color: $color-brand-secondary; background-color: $color-brand-secondary;  }
@@ -51,8 +51,8 @@ $color-gray-73: lighten($color-black, 27%);
 $color-gray-87: lighten($color-black, 13%);
 
 .color-white { background: $color-white; }
-.color-gray-02 { background: $color-gray-25; }
-.color-gray-15 { background: $color-gray-30; }
+.color-gray-25 { background: $color-gray-25; }
+.color-gray-30 { background: $color-gray-30; }
 .color-gray-35 { background: $color-gray-35; }
 .color-gray-50 { background: $color-gray-50; }
 .color-gray-65 { background: $color-gray-65; }
