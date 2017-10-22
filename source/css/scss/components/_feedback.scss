@@ -28,7 +28,7 @@
     //border: 1px solid rgba(0, 0, 0, 0.5);
     border: none;
     background-size: auto;
-    background: $color-gray-15;
+    background: $color-gray-30;
     background-size: auto;
     width: 100%;
     max-width: 300px;
@@ -38,7 +38,7 @@
   }
 
   .c-progress progress:not([value]) {
-     background: $color-gray-15;
+     background: $color-gray-30;
      opacity: 0.7;
    }
 
@@ -52,10 +52,10 @@
 
    &.start::-webkit-progress-value {
    	width: 0% !important;
-   	background: $color-gray-15  !important;
+   	background: $color-gray-30  !important;
    }
    &[value]::-webkit-progress-bar {
-     background: $color-gray-15  !important;
+     background: $color-gray-30  !important;
    }
    &.color-utility-neutral::-webkit-progress-value {
      background: $color-utility-neutral;
@@ -81,7 +81,7 @@
 .c-progress {
   &.start::-moz-progress-bar {
   	width: 0% !important;
-  	background: $color-gray-15 !important;
+  	background: $color-gray-30 !important;
   }
   &.color-utility-neutral::-moz-progress-bar {
       background: $color-utility-neutral !important;
@@ -101,7 +101,7 @@
 * Spinner
 */
 .loader {
-  border: 8px solid $color-gray-15;
+  border: 8px solid $color-gray-30;
   border-radius: 50%;
   border-top: 8px solid $color-utility-neutral;
   width: 80px;

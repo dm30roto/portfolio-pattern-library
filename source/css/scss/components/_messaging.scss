@@ -8,11 +8,11 @@
 .alert {
 	text-align: center;
 	padding: 0 1rem;
-	background: $color-gray-02;
+	background: $color-gray-25;
 	overflow: hidden;
 	font-size: 1em;
 	animation: slideDown 2s forwards;
-	
+
 	a {
 		color: inherit;
 		text-decoration: underline;
@@ -87,24 +87,24 @@
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
-	
+
 	&--is-hidden {
 		display: none;
 	}
-	
+
 	.c-tile-grid__primary & {
 		position: absolute;
 	}
-	
+
 	.c-tile-list__item & {
 		position: absolute;
 	}
-	
+
 	.c-section & {
 		position: absolute;
 	}
  }
- 
+
  /**
  * Overlay Intro
  */
@@ -112,4 +112,3 @@
 	 font-size: 1.5rem;
 	 color: $color-white;
  }
- 

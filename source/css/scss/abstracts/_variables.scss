@@ -42,8 +42,8 @@
  */
 $color-white: #fff;
 $color-black: #333;
-$color-gray-02: lighten($color-black, 75%);
-$color-gray-15: lighten($color-black, 70%);
+$color-gray-25: lighten($color-black, 75%);
+$color-gray-30: lighten($color-black, 70%);
 $color-gray-35: lighten($color-black, 65%);
 $color-gray-50: lighten($color-black, 50%);
 $color-gray-65: lighten($color-black, 35%);
@@ -51,8 +51,8 @@ $color-gray-73: lighten($color-black, 27%);
 $color-gray-87: lighten($color-black, 13%);
 
 .color-white { background: $color-white; }
-.color-gray-02 { background: $color-gray-02; }
-.color-gray-15 { background: $color-gray-15; }
+.color-gray-02 { background: $color-gray-25; }
+.color-gray-15 { background: $color-gray-30; }
 .color-gray-35 { background: $color-gray-35; }
 .color-gray-50 { background: $color-gray-50; }
 .color-gray-65 { background: $color-gray-65; }
@@ -68,16 +68,16 @@ $color-dim-70: rgba(0,0,0,0.7);
  * 1) Utility colors are colors used to provide feedback, such as alert messages,
  * form validation, etc.
  */
-$color-utility-positive: #149946;
-$color-utility-postitive-subtle: #52B878;
-$color-utility-caution: #ffb600;
-$color-utility-caution-subtle: #FFD161;
-$color-utility-major: #ff8500;
-$color-utility-major-subtle: #FFB361;
-$color-utility-negative: #ff2c00;
-$color-utility-negative-subtle: #FF7C61;
-$color-utility-neutral: #0776A0;
-$color-utility-neutral-subtle: #4D9AB8;
+$color-utility-positive: #00BF32;
+$color-utility-postitive-subtle: #51E478;
+$color-utility-caution: #FFD726;
+$color-utility-caution-subtle: #FFE678;
+$color-utility-major: #FF7F00;
+$color-utility-major-subtle: #FFB770;
+$color-utility-negative: #FF1E00;
+$color-utility-negative-subtle: #FF6E5B;
+$color-utility-neutral: #04819E;
+$color-utility-neutral-subtle: #75D9F1;
 
 .color-utility-positive { background: $color-utility-positive; }
 .color-utility-postitive-subtle { background: $color-utility-postitive-subtle; }
