@@ -72,12 +72,12 @@ $color-utility-positive: #00BF32;
 $color-utility-postitive-subtle: #51E478;
 $color-utility-caution: #FFD726;
 $color-utility-caution-subtle: #FFE678;
-$color-utility-major: #FF7F00;
-$color-utility-major-subtle: #FFB770;
-$color-utility-negative: #FF1E00;
-$color-utility-negative-subtle: #FF6E5B;
-$color-utility-neutral: #04819E;
-$color-utility-neutral-subtle: #75D9F1;
+$color-utility-major: #FF8500;
+$color-utility-major-subtle: #FFBA70;
+$color-utility-negative: #FF2C00;
+$color-utility-negative-subtle: #FF8970;
+$color-utility-neutral: #0ABBFF;
+$color-utility-neutral-subtle: #76D9FF;
 
 .color-utility-positive { background: $color-utility-positive; }
 .color-utility-postitive-subtle { background: $color-utility-postitive-subtle; }
@@ -133,7 +133,7 @@ $color-border: $color-gray-50;
     #TYPOGRAPHY
 \*------------------------------------*/
 
-$font : 'Roboto', sans-serif;
+$font : 'Lato', sans-serif;
 $font-secondary : "HelveticaNeue", "Helvetica", "Arial", sans-serif;
 
 $font-size-small : 0.75rem;

@@ -88,62 +88,65 @@ So feel free to use any of these approaches. Or don't. It's totally up to you.
  */
 /*------------------------------------*    #FONT
 \*------------------------------------*/
+/*
 @font-face {
   font-family: "Roboto";
   src: url("../fonts/Roboto/Roboto-Thin.ttf") format("truetype");
   font-stretch: normal;
   font-style: normal;
-  font-weight: 100; }
-
+  font-weight: 100;
+}
 @font-face {
   font-family: "Roboto";
   src: url("../fonts/Roboto/Roboto-ThinItalic.ttf") format("truetype");
   font-stretch: normal;
   font-style: italic;
-  font-weight: 100; }
-
+  font-weight: 100;
+}
 @font-face {
   font-family: "Roboto";
   src: url("../fonts/Roboto/Roboto-Light.ttf") format("truetype");
   font-stretch: normal;
   font-style: normal;
-  font-weight: 300; }
-
+  font-weight: 300;
+}
 @font-face {
   font-family: "Roboto";
   src: url("../fonts/Roboto/Roboto-LightItalic.ttf") format("truetype");
   font-stretch: normal;
   font-style: italic;
-  font-weight: 300; }
-
+  font-weight: 300;
+}
 @font-face {
   font-family: "Roboto";
   src: url("../fonts/Roboto/Roboto-Regular.ttf") format("truetype");
   font-stretch: normal;
   font-style: normal;
-  font-weight: 400; }
-
+  font-weight: 400;
+}
 @font-face {
   font-family: "Roboto";
   src: url("../fonts/Roboto/Roboto-Italic.ttf") format("truetype");
   font-stretch: normal;
   font-style: italic;
-  font-weight: 400; }
-
+  font-weight: 400;
+}
 @font-face {
   font-family: "Roboto";
   src: url("../fonts/Roboto/Roboto-Bold.ttf") format("truetype");
   font-stretch: normal;
   font-style: normal;
-  font-weight: 700; }
-
+  font-weight: 700;
+}
 @font-face {
   font-family: "Roboto";
   src: url("../fonts/Roboto/Roboto-BoldItalic.ttf") format("truetype");
   font-stretch: normal;
   font-style: italic;
-  font-weight: 700; }
+  font-weight: 700;
+}
 
+*/
 /*------------------------------------*    #VARIABLES
 \*------------------------------------*/
 /*------------------------------------*    #COLORS
@@ -226,22 +229,22 @@ So feel free to use any of these approaches. Or don't. It's totally up to you.
   background: #FFE678; }
 
 .color-utility-major {
-  background: #FF7F00; }
+  background: #FF8500; }
 
 .color-utility-major-subtle {
-  background: #FFB770; }
+  background: #FFBA70; }
 
 .color-utility-negative {
-  background: #FF1E00; }
+  background: #FF2C00; }
 
 .color-utility-negative-subtle {
-  background: #FF6E5B; }
+  background: #FF8970; }
 
 .color-utility-neutral {
-  background: #04819E; }
+  background: #0ABBFF; }
 
 .color-utility-neutral-subtle {
-  background: #75D9F1; }
+  background: #76D9FF; }
 
 /*
   * Text Colors
@@ -299,7 +302,7 @@ So feel free to use any of these approaches. Or don't. It's totally up to you.
 body {
   background: #fff;
   color: #b3b3b3;
-  font: 100%/1.5 "Roboto", sans-serif;
+  font: 100%/1.5 "Lato", sans-serif;
   -webkit-text-size-adjust: 100%;
   min-height: 100vh;
   display: flex;
@@ -360,8 +363,8 @@ input, textarea, .dropdown select {
     color: #d9d9d9; }
   input:focus, textarea:focus, .dropdown select:focus {
     outline: none;
-    box-shadow: 0 0 2px #04819E;
-    border: 1px solid #04819E; }
+    box-shadow: 0 0 2px #0ABBFF;
+    border: 1px solid #0ABBFF; }
 
 /**
  * Input areas base styles
@@ -449,11 +452,11 @@ input[type="search"]::-webkit-search-decoration {
       text-align: center;
       transition: all 250ms ease; }
     .radio input[type="radio"]:checked + .radio-label:before {
-      background-color: #04819E;
+      background-color: #0ABBFF;
       box-shadow: inset 0 0 0 4px #f2f2f2; }
     .radio input[type="radio"]:focus + .radio-label:before {
       outline: none;
-      border-color: #04819E; }
+      border-color: #0ABBFF; }
     .radio input[type="radio"]:disabled + .radio-label:before {
       box-shadow: inset 0 0 0 4px #e6e6e6;
       border-color: #d9d9d9;
@@ -508,7 +511,7 @@ input[type="checkbox"]:checked + label:before {
   left: 5px;
   border-radius: 0;
   opacity: 1;
-  border: 2px solid #04819E;
+  border: 2px solid #0ABBFF;
   border-top-color: transparent;
   border-left-color: transparent;
   -webkit-transform: rotate(45deg);
@@ -560,10 +563,10 @@ input[type="checkbox"]:disabled:checked + label:before {
   transition: .4s; }
 
 input:checked + .slider {
-  background-color: #04819E; }
+  background-color: #0ABBFF; }
 
 input:focus + .slider {
-  box-shadow: 0 0 1px #04819E; }
+  box-shadow: 0 0 1px #0ABBFF; }
 
 input:checked + .slider:before {
   -webkit-transform: translateX(26px);
@@ -671,7 +674,7 @@ input:disabled + .slider:before {
  * Show error text color
  */
 .error {
-  color: #FF1E00; }
+  color: #FF2C00; }
 
 /**
  * Show warning text color
@@ -683,7 +686,7 @@ input:disabled + .slider:before {
  * Show informational text color
  */
 .information {
-  color: #04819E; }
+  color: #0ABBFF; }
 
 /**
  * Display secondary font family
@@ -1128,12 +1131,12 @@ abbr {
     color: #b3b3b3; }
 
 .c-btn--negative {
-  background: #FF1E00;
+  background: #FF2C00;
   color: #fff; }
   .c-btn--negative:hover, .c-btn--negative:focus, .c-btn--negative.hover-state {
-    background-color: #cc1800; }
+    background-color: #cc2300; }
   .c-btn--negative:active, .c-btn--negative.active-state {
-    background-color: #b31500; }
+    background-color: #b31f00; }
   .c-btn--negative.disabled, .c-btn--negative.disabled-state {
     background: #e6e6e6;
     color: #b3b3b3; }
@@ -1720,8 +1723,8 @@ abbr {
  * Error alert
  */
 .alert--error {
-  color: #FF1E00;
-  background: #FF6E5B; }
+  color: #FF2C00;
+  background: #FF8970; }
 
 /**
  * Success alert
@@ -1741,8 +1744,8 @@ abbr {
  * Info alert
  */
 .alert--info {
-  color: #04819E;
-  background: #75D9F1; }
+  color: #0ABBFF;
+  background: #76D9FF; }
 
 /**
  * Slidedown animation
@@ -2031,13 +2034,13 @@ progress[role] strong {
   background: #e6e6e6 !important; }
 
 .c-progress.color-utility-neutral::-webkit-progress-value {
-  background: #04819E; }
+  background: #0ABBFF; }
 
 .c-progress.color-utility-positive::-webkit-progress-value {
   background: #00BF32; }
 
 .c-progress.color-utility-negative::-webkit-progress-value {
-  background: #FF1E00; }
+  background: #FF2C00; }
 
 .anim::-webkit-progress-value {
   -webkit-transition: width 4s ease;
@@ -2052,13 +2055,13 @@ progress[role] strong {
   background: #e6e6e6 !important; }
 
 .c-progress.color-utility-neutral::-moz-progress-bar {
-  background: #04819E !important; }
+  background: #0ABBFF !important; }
 
 .c-progress.color-utility-positive::-moz-progress-bar {
   background: #00BF32 !important; }
 
 .c-progress.color-utility-negative::-moz-progress-bar {
-  background: #FF1E00 !important; }
+  background: #FF2C00 !important; }
 
 .c-progress.anim::-moz-progress-bar {
   -moz-transition: width 4s ease; }
@@ -2069,7 +2072,7 @@ progress[role] strong {
 .loader {
   border: 8px solid #e6e6e6;
   border-radius: 50%;
-  border-top: 8px solid #04819E;
+  border-top: 8px solid #ED3066;
   width: 80px;
   height: 80px;
   -webkit-animation: spin 2s linear infinite;
