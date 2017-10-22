@@ -302,7 +302,7 @@ So feel free to use any of these approaches. Or don't. It's totally up to you.
 body {
   background: #fff;
   color: #b3b3b3;
-  font: 100%/1.5 "Lato", sans-serif;
+  font: 100%/1.5 "Source Sans Pro", sans-serif;
   -webkit-text-size-adjust: 100%;
   min-height: 100vh;
   display: flex;
