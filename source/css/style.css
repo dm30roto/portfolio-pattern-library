@@ -2145,6 +2145,32 @@ progress[role] strong {
   100% {
     transform: rotate(360deg); } }
 
+.alert-message {
+  position: relative;
+  margin-top: 0.25rem;
+  padding: 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  border-radius: 4px; }
+
+.alert-message--positive {
+  background-color: #00BF32;
+  color: #fff; }
+
+.alert-message--caution {
+  background-color: #FFD726;
+  color: #fff; }
+
+.alert-message--major {
+  background-color: #FF8500;
+  color: #fff; }
+
+.alert-message--negative {
+  background-color: #FF2C00;
+  color: #fff; }
+
 /*------------------------------------*    $LAYOUT
 \*------------------------------------*/
 /*------------------------------------*    #LAYOUT

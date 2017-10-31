@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width" />
 
-    <link rel="stylesheet" href="../../css/style.css?1509423882311" media="all" />
-    <link rel="stylesheet" href="../../css/pattern-scaffolding.css?1509423882311" media="all" />
+    <link rel="stylesheet" href="../../css/style.css?1509424942568" media="all" />
+    <link rel="stylesheet" href="../../css/pattern-scaffolding.css?1509424942568" media="all" />
 
     <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i" rel="stylesheet">
@@ -19,8 +19,8 @@
 <meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
 <meta http-equiv="pragma" content="no-cache" />
 
-<link rel="stylesheet" href="../../styleguide/css/styleguide.min.css?1509423882311" media="all">
-<link rel="stylesheet" href="../../styleguide/css/prism-typeahead.min.css?1509423882311" media="all" />
+<link rel="stylesheet" href="../../styleguide/css/styleguide.min.css?1509424942568" media="all">
+<link rel="stylesheet" href="../../styleguide/css/prism-typeahead.min.css?1509424942568" media="all" />
 
     <!-- End Pattern Lab -->
 
@@ -474,7 +474,7 @@
   <div class="sg-pattern-head">
     <h3 class="sg-pattern-title">
       <a href="../../patterns/00-atoms-feedback-00-alerts&#x2F;00-atoms-feedback-00-alerts.rendered.html" class="patternLink" data-patternpartial="atoms-alerts" title="Link to Pattern">
-          Spinner
+          Alerts
       </a>
     </h3>
     <div class="sg-pattern-breadcrumb"></div>
@@ -484,24 +484,54 @@
     
   </div>
   <div class="sg-pattern-example">
+    <div style="margin:10px;">
+  <div class="alert-message alert-message--positive">
+  <!-- <svg class="alert-message__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 38 38" aria-hidden="true">
+    <title>Error</title>
+  </svg> -->
+  <div>
+    Oh no, something went wrong.
+    <!-- <a class="alert-message__action" href="#">Fix this error.</a> -->
+  </div>
+</div>
+</div>
+<div style="margin:10px;">
+  <div class="alert-message alert-message--caution">
+  <!-- <svg class="alert-message__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 38 38" aria-hidden="true">
+    <title>Error</title>
+  </svg> -->
+  <div>
+    Oh no, something went wrong.
+    <!-- <a class="alert-message__action" href="#">Fix this error.</a> -->
+  </div>
+</div>
+</div>
+<div style="margin:10px;">
+  <div class="alert-message alert-message--major">
+    <!-- <svg class="alert-message__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 38 38" aria-hidden="true">
+      <title>Error</title>
+    </svg> -->
     <div>
-  Default<br/>
-	<div class="loader"></div>
+      Oh no, something went wrong.
+      <!-- <a class="alert-message__action" href="#">Fix this error.</a> -->
+    </div>
+  </div>
 </div>
-<br/>
-<div>
-	Small<br />
-	<div class="loader loader-small"></div>
-</div>
-<br/>
-<div>
-	Large<br />
-	<div class="loader loader-large"></div>
+<div style="margin:10px;">
+  <div class="alert-message alert-message--negative">
+    <!-- <svg class="alert-message__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 38 38" aria-hidden="true">
+      <title>Error</title>
+    </svg> -->
+    <div>
+      Oh no, something went wrong.
+      <!-- <a class="alert-message__action" href="#">Fix this error.</a> -->
+    </div>
+  </div>
 </div>
 
   </div>
   <script type="text/json" id="sg-pattern-data-atoms-alerts" class="sg-pattern-data">
-    {"cssEnabled":false,"patternLineageExists":false,"patternLineages":[],"lineage":[],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":false,"patternDesc":"<p>An activity indicator spins while an unquantifiable task, such as loading or synchronizing complex data, is performed. It disappears when the task completes. Activity indicators are noninteractive.</p>\n","patternBreadcrumb":{"patternType":"atoms","patternSubtype":"feedback"},"patternExtension":"mustache","patternName":"Spinner","patternPartial":"atoms-alerts","patternState":"","patternEngineName":"mustache","extraOutput":{}}
+    {"cssEnabled":false,"patternLineageExists":false,"patternLineages":[],"lineage":[],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":false,"patternDesc":"<p>[Enter description]</p>\n","patternBreadcrumb":{"patternType":"atoms","patternSubtype":"feedback"},"patternExtension":"mustache","patternName":"Alerts","patternPartial":"atoms-alerts","patternState":"","patternEngineName":"mustache","extraOutput":{}}
   </script>
 </div><!--end .sg-pattern-->
 <div id="atoms-spinner" class="sg-pattern">
@@ -575,6 +605,27 @@
   </div>
   <script type="text/json" id="sg-pattern-data-atoms-progress" class="sg-pattern-data">
     {"cssEnabled":false,"patternLineageExists":false,"patternLineages":[],"lineage":[],"patternLineageRExists":true,"patternLineagesR":[{"lineagePattern":"molecules-block-tile","lineagePath":"../../patterns/01-molecules-blocks-block-tile/01-molecules-blocks-block-tile.rendered.html"}],"lineageR":[{"lineagePattern":"molecules-block-tile","lineagePath":"../../patterns/01-molecules-blocks-block-tile/01-molecules-blocks-block-tile.rendered.html"}],"patternLineageEExists":true,"patternDesc":"<p>A progress bar includes a track that fills from left to right to show the progression of a task with a known duration. Progress bars are noninteractive, although they are often accompanied by a button for canceling the corresponding operation.</p>\n","patternBreadcrumb":{"patternType":"atoms","patternSubtype":"feedback"},"patternExtension":"mustache","patternName":"Progress","patternPartial":"atoms-progress","patternState":"","patternEngineName":"mustache","extraOutput":{}}
+  </script>
+</div><!--end .sg-pattern-->
+<div id="atoms-toast" class="sg-pattern">
+  <div class="sg-pattern-head">
+    <h3 class="sg-pattern-title">
+      <a href="../../patterns/00-atoms-feedback-03-toast&#x2F;00-atoms-feedback-03-toast.rendered.html" class="patternLink" data-patternpartial="atoms-toast" title="Link to Pattern">
+          Toast
+      </a>
+    </h3>
+    <div class="sg-pattern-breadcrumb"></div>
+    <a href="#" data-patternpartial="atoms-toast" title="View Pattern Info" id="sg-pattern-extra-toggle-atoms-toast" class="sg-pattern-extra-toggle"><span>&#9660;</span></a>
+  </div>
+  <div class="sg-pattern-extra" id="sg-pattern-extra-atoms-toast">
+    
+  </div>
+  <div class="sg-pattern-example">
+    <div>TODO</div>
+
+  </div>
+  <script type="text/json" id="sg-pattern-data-atoms-toast" class="sg-pattern-data">
+    {"cssEnabled":false,"patternLineageExists":false,"patternLineages":[],"lineage":[],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":false,"patternDesc":"<p>[Enter here]</p>\n","patternBreadcrumb":{"patternType":"atoms","patternSubtype":"feedback"},"patternExtension":"mustache","patternName":"Toast","patternPartial":"atoms-toast","patternState":"","patternEngineName":"mustache","extraOutput":{}}
   </script>
 </div><!--end .sg-pattern-->
 <div id="viewall-atoms-forms" class="sg-pattern-category">
@@ -2399,10 +2450,10 @@ p q r s t u v w x y z { | } ~
   }
 </script>
 
-<script id="pl-js-polyfill-insert-1509423882311">
+<script id="pl-js-polyfill-insert-1509424942568">
   (function() {
     if (self != top) {
-      var cb = '1509423882311';
+      var cb = '1509424942568';
       var js = [];
       if (typeof document !== 'undefined' && !('classList' in document.documentElement)) {
         js.push('styleguide/bower_components/classList.min.js');
@@ -2412,10 +2463,10 @@ p q r s t u v w x y z { | } ~
   })();
 </script>
 
-<script id="pl-js-insert-1509423882311">
+<script id="pl-js-insert-1509424942568">
   (function() {
     if (self != top) {
-      var cb = '1509423882311';
+      var cb = '1509424942568';
       var js = [ { 'src': 'styleguide/bower_components/jwerty.min.js', 'dep': [ 'styleguide/js/patternlab-pattern.min.js' ] } ];
       scriptLoader.run(js,cb,'pl-js-insert');
     }

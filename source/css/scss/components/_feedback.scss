@@ -133,3 +133,34 @@
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
 }
+
+.alert-message {
+  position: relative;
+  margin-top: 0.25rem;
+  padding: 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  border-radius: 4px;
+}
+
+.alert-message--positive {
+  background-color: $color-utility-positive;
+  color: $color-white;
+}
+
+.alert-message--caution {
+  background-color: $color-utility-caution;
+  color: $color-white;
+}
+
+.alert-message--major {
+  background-color: $color-utility-major;
+  color: $color-white;
+}
+
+.alert-message--negative {
+  background-color: $color-utility-negative;
+  color: $color-white;
+}
