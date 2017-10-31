@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "timestamp": 1509423611305,
+  "timestamp": 1509423883631,
   "graph": {
     "options": {
       "directed": true,
@@ -73,17 +73,23 @@
         }
       },
       {
-        "v": "00-atoms/feedback/progress.mustache",
+        "v": "00-atoms/feedback/00-alerts.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "00-atoms/feedback/01-spinner.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "00-atoms/feedback/02-progress.mustache",
         "value": {
           "compileState": "clean",
           "lineagePath": "../../patterns/01-molecules-blocks-block-tile/01-molecules-blocks-block-tile.rendered.html",
           "lineagePattern": "molecules-block-tile"
-        }
-      },
-      {
-        "v": "00-atoms/feedback/spinner.mustache",
-        "value": {
-          "compileState": "clean"
         }
       },
       {
@@ -548,7 +554,7 @@
       },
       {
         "v": "01-molecules/blocks/block-tile.mustache",
-        "w": "00-atoms/feedback/progress.mustache",
+        "w": "00-atoms/feedback/02-progress.mustache",
         "value": {}
       },
       {
