@@ -145,6 +145,11 @@
   border-radius: 4px;
 }
 
+.alert-message--neutral {
+  background-color: $color-utility-neutral;
+  color: $color-white;
+}
+
 .alert-message--positive {
   background-color: $color-utility-positive;
   color: $color-white;

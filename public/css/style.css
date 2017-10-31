@@ -2155,6 +2155,10 @@ progress[role] strong {
   align-items: center;
   border-radius: 4px; }
 
+.alert-message--neutral {
+  background-color: #0ABBFF;
+  color: #fff; }
+
 .alert-message--positive {
   background-color: #00BF32;
   color: #fff; }
