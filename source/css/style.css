@@ -175,8 +175,8 @@ So feel free to use any of these approaches. Or don't. It's totally up to you.
   background-color: #4DC5E2; }
 
 .color-digital-blue {
-  color: #183ECB;
-  background-color: #183ECB; }
+  color: #275EDE;
+  background-color: #275EDE; }
 
 /*
  * Neutral Colors
@@ -1082,6 +1082,8 @@ abbr {
   font-size: 1rem; }
 
 /*------------------------------------*    #BUTTONS
+
+		https://medium.com/eightshapes-llc/buttons-in-design-systems-eac3acf7e23
 \*------------------------------------*/
 /**
  * Button
@@ -1089,7 +1091,7 @@ abbr {
 .c-btn {
   display: inline-block;
   line-height: 1;
-  padding: 0.8125rem 1rem 0.625rem;
+  padding: 0.8125rem 1rem 0.8125rem;
   border: 0;
   border-radius: 2px;
   text-align: center;
@@ -1109,12 +1111,13 @@ abbr {
     box-shadow: none; }
 
 .c-btn--default {
-  background: #4DC5E2;
-  color: #fff; }
+  background: #e6e6e6;
+  color: #545454; }
   .c-btn--default:hover, .c-btn--default:focus, .c-btn--default.hover-state {
-    background-color: #23b5d9; }
+    color: #545454;
+    background: #d9d9d9; }
   .c-btn--default:active, .c-btn--default.active-state {
-    background-color: #20a3c3; }
+    background: #b3b3b3; }
   .c-btn--default.disabled, .c-btn--default.disabled-state {
     background: #e6e6e6;
     color: #b3b3b3; }
@@ -1128,6 +1131,36 @@ abbr {
     background-color: #c01143; }
   .c-btn--primary.disabled, .c-btn--primary.disabled-state {
     background: #e6e6e6;
+    color: #b3b3b3; }
+
+.c-btn--secondary {
+  background: #4DC5E2;
+  color: #fff; }
+  .c-btn--secondary:hover, .c-btn--secondary:focus, .c-btn--secondary.hover-state {
+    background-color: #23b5d9; }
+  .c-btn--secondary:active, .c-btn--secondary.active-state {
+    background-color: #20a3c3; }
+  .c-btn--secondary.disabled, .c-btn--secondary.disabled-state {
+    background: #e6e6e6;
+    color: #b3b3b3; }
+
+.c-btn--link {
+  background: none;
+  box-shadow: none;
+  border: none;
+  color: #275EDE; }
+  .c-btn--link:hover, .c-btn--link:focus, .c-btn--link.hover-state {
+    color: #275EDE;
+    background: none;
+    text-decoration: underline; }
+  .c-btn--link:active, .c-btn--link.active-state {
+    background: none;
+    box-shadow: none;
+    border: none;
+    color: #1841a0;
+    text-decoration: none; }
+  .c-btn--link.disabled, .c-btn--link.disabled-state {
+    background: none;
     color: #b3b3b3; }
 
 .c-btn--negative {
@@ -1188,6 +1221,16 @@ abbr {
     background: #e6e6e6; }
   .c-block-media--small .c-text-btn {
     font-size: 1rem; }
+
+.c-text-btn--primary {
+  color: #ED3066; }
+  .c-text-btn--primary:hover, .c-text-btn--primary:focus {
+    color: #ED3066; }
+
+.c-text-btn--secondary {
+  color: #4DC5E2; }
+  .c-text-btn--secondary:hover, .c-text-btn--secondary:focus {
+    color: #4DC5E2; }
 
 /**
  * Button on overlay

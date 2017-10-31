@@ -1,5 +1,7 @@
 /*------------------------------------*\
     #BUTTONS
+
+		https://medium.com/eightshapes-llc/buttons-in-design-systems-eac3acf7e23
 \*------------------------------------*/
 
 /**
@@ -8,7 +10,7 @@
 .c-btn {
 	display: inline-block;
 	line-height: 1;
-	padding: 0.8125rem 1rem 0.625rem;
+	padding: 0.8125rem 1rem 0.8125rem;
 	border: 0;
 	border-radius: $border-radius;
 	text-align: center;
@@ -35,15 +37,16 @@
 }
 
 .c-btn--default {
-	background: $color-brand-secondary;
-	color: $color-white;
+	background: $color-gray-30;
+	color: $color-gray-87;
 
 	&:hover, &:focus, &.hover-state {
-		@include bg-color-darken-10($color-brand-secondary);
+		color: $color-gray-87;
+		background: $color-gray-35;
 	}
 
 	&:active, &.active-state {
-		@include bg-color-darken-15($color-brand-secondary);
+		background: $color-gray-50;
 	}
 
 	&.disabled, &.disabled-state {
@@ -66,6 +69,50 @@
 
 	&.disabled, &.disabled-state {
 		background: $color-gray-30;
+		color: $color-gray-50;
+	}
+}
+
+.c-btn--secondary {
+	background: $color-brand-secondary;
+	color: $color-white;
+
+	&:hover, &:focus, &.hover-state {
+		@include bg-color-darken-10($color-brand-secondary);
+	}
+
+	&:active, &.active-state {
+		@include bg-color-darken-15($color-brand-secondary);
+	}
+
+	&.disabled, &.disabled-state {
+		background: $color-gray-30;
+		color: $color-gray-50;
+	}
+}
+
+.c-btn--link {
+	background: none;
+	box-shadow: none;
+	border: none;
+	color: $color-digital-blue;
+
+	&:hover, &:focus, &.hover-state {
+		color: $color-digital-blue;
+		background: none;
+		text-decoration: underline;
+	}
+
+	&:active, &.active-state {
+		background: none;
+		box-shadow: none;
+		border: none;
+		color: darken($color-digital-blue, 15%);
+		text-decoration: none;
+	}
+
+	&.disabled, &.disabled-state {
+		background: none;
 		color: $color-gray-50;
 	}
 }
@@ -149,7 +196,18 @@
 		font-size: 1rem;
 	}
 }
-
+.c-text-btn--primary {
+	color: $color-brand-primary;
+	&:hover, &:focus {
+		color: $color-brand-primary;
+	}
+}
+.c-text-btn--secondary {
+	color: $color-brand-secondary;
+	&:hover, &:focus {
+		color: $color-brand-secondary;
+	}
+}
 /**
  * Button on overlay
  */
