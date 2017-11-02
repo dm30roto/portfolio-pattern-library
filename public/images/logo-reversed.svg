@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="118px" height="108px" viewBox="0 0 118 108" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="background: #3E3D3B;">
+<svg viewBox="0 0 118 108" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="background: #3E3D3B;">
     <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
-    <title>Artboard Copy 21</title>
+    <title>Artboard Copy 45</title>
     <desc>Created with Sketch.</desc>
     <defs></defs>
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Artboard-Copy-21">
+        <g id="Artboard-Copy-45">
             <g id="Group">
-                <rect id="Rectangle" fill="#ED3066" x="0" y="0" width="118" height="108"></rect>
-                <path d="M39,87 C49.4934102,87 58,78.4934102 58,68 C58,57.5065898 49.4934102,49 39,49 C28.5065898,49 20,57.5065898 20,68 C20,78.4934102 28.5065898,87 39,87 Z M58,19 L58,86" id="Line" stroke="#4DC5E2" stroke-width="10" fill="#FFFFFF" stroke-linecap="square"></path>
-                <path d="M97.0640346,51.2972773 C94.3700913,49.8322667 91.2822388,49 88,49 C77.5065898,49 69,57.5065898 69,68 M69,49 L69,86" id="Line-Copy" stroke="#F2F2F2" stroke-width="10" stroke-linecap="square"></path>
+                <rect id="Rectangle" fill="#425163" x="0" y="0" width="118" height="108"></rect>
+                <path d="M39,87 C49.4934102,87 58,78.4934102 58,68 C58,57.5065898 49.4934102,49 39,49 C28.5065898,49 20,57.5065898 20,68 C20,78.4934102 28.5065898,87 39,87 Z M58,19 L58,86" id="Line" stroke="#FFFFFF" stroke-width="10" fill="#425163" stroke-linecap="square"></path>
+                <path d="M97.0640346,51.2972773 C94.3700913,49.8322667 91.2822388,49 88,49 C77.5065898,49 69,57.5065898 69,68 M69,49 L69,86" id="Line-Copy" stroke="#FFFFFF" stroke-width="10" stroke-linecap="square"></path>
             </g>
         </g>
     </g>

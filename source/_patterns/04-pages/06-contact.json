@@ -35,7 +35,7 @@
 				"excerpt" : {
 					"medium" : "A detailed outlook at the most difficult hikes on earth"
 				}
-				
+
 			},
 			{
 				"url" : "link.pages-blog-detail",
@@ -49,7 +49,7 @@
 				"excerpt" : {
 					"medium" : "Tips and suggestions on survival in the forest"
 				}
-				
+
 			},
 			{
 				"url" : "link.pages-blog-detail",
@@ -63,7 +63,7 @@
 				"excerpt" : {
 					"medium" : "A list of the top 10 locations to hike in the United States"
 				}
-				
+
 			}
 		],
 		"btnText" : "View All Posts"
@@ -84,7 +84,7 @@
 				"excerpt" : {
 					"medium" : "Indiana, PA"
 				}
-				
+
 			},
 			{
 				"url" : "",
@@ -99,7 +99,7 @@
 				"excerpt" : {
 					"medium" : "Los Angeles, CA"
 				}
-				
+
 			},
 			{
 				"url" : "",
@@ -114,7 +114,7 @@
 				"excerpt" : {
 					"medium" : "Sheboygan, WI"
 				}
-				
+
 			}
 		],
 		"btnText" : "View All Hikers"
