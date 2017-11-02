@@ -10,7 +10,7 @@
     "patternlab-node": "^2.0.0",
     "styleguidekit-assets-default": "^3.0.0",
     "styleguidekit-mustache-default": "^3.0.0",
-    "gulp-sass": "^3.0.0" 
+    "gulp-sass": "^3.0.0"
   },
   "keywords": [
     "Pattern Lab",

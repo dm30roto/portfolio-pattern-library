@@ -143,29 +143,56 @@
   display: flex;
   align-items: center;
   border-radius: 4px;
-}
 
-.alert-message--neutral {
-  background-color: $color-utility-neutral;
-  color: $color-white;
-}
+  &.alert-message--neutral {
+    background-color: $color-utility-neutral;
+    color: $color-white;
+  }
 
-.alert-message--positive {
-  background-color: $color-utility-positive;
-  color: $color-white;
-}
+  &.alert-message--positive {
+    background-color: $color-utility-positive;
+    color: $color-white;
+  }
 
-.alert-message--caution {
-  background-color: $color-utility-caution;
-  color: $color-white;
-}
+  &.alert-message--caution {
+    background-color: $color-utility-caution;
+    color: $color-white;
+  }
 
-.alert-message--major {
-  background-color: $color-utility-major;
-  color: $color-white;
-}
+  &.alert-message--major {
+    background-color: $color-utility-major;
+    color: $color-white;
+  }
 
-.alert-message--negative {
-  background-color: $color-utility-negative;
-  color: $color-white;
+  &.alert-message--negative {
+    background-color: $color-utility-negative;
+    color: $color-white;
+  }
+}
+.alert-message-alt {
+  background-color: transparent !important;
+  color:$color-text !important;
+  &.alert-message--neutral {
+    border: 1px solid $color-utility-neutral;
+  }
+
+  &.alert-message--positive {
+    background-color: $color-utility-positive;
+    color: $color-white;
+  }
+
+  &.alert-message--caution {
+    background-color: $color-utility-caution;
+    color: $color-white;
+  }
+
+  &.alert-message--major {
+    background-color: $color-utility-major;
+    color: $color-white;
+  }
+
+  &.alert-message--negative {
+    background-color: $color-utility-negative;
+    color: $color-white;
+  }
 }
