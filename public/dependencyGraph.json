@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "timestamp": 1509636340385,
+  "timestamp": 1509759006291,
   "graph": {
     "options": {
       "directed": true,
@@ -73,23 +73,23 @@
         }
       },
       {
-        "v": "00-atoms/feedback/00-alerts.mustache",
+        "v": "00-atoms/feedback/00-spinner.mustache",
         "value": {
           "compileState": "clean"
         }
       },
       {
-        "v": "00-atoms/feedback/01-spinner.mustache",
-        "value": {
-          "compileState": "clean"
-        }
-      },
-      {
-        "v": "00-atoms/feedback/02-progress.mustache",
+        "v": "00-atoms/feedback/01-progress.mustache",
         "value": {
           "compileState": "clean",
           "lineagePath": "../../patterns/01-molecules-blocks-block-tile/01-molecules-blocks-block-tile.rendered.html",
           "lineagePattern": "molecules-block-tile"
+        }
+      },
+      {
+        "v": "00-atoms/feedback/02-alerts.mustache",
+        "value": {
+          "compileState": "clean"
         }
       },
       {
@@ -515,13 +515,13 @@
         }
       },
       {
-        "v": "/Users/drotondo/Desktop/projects/portfolio-pattern-library/source/_meta/_00-head.mustache",
+        "v": "/Users/dm30roto/Documents/github repos/portfolio-pattern-library/source/_meta/_00-head.mustache",
         "value": {
           "compileState": null
         }
       },
       {
-        "v": "/Users/drotondo/Desktop/projects/portfolio-pattern-library/source/_meta/_01-foot.mustache",
+        "v": "/Users/dm30roto/Documents/github repos/portfolio-pattern-library/source/_meta/_01-foot.mustache",
         "value": {
           "compileState": null
         }
@@ -560,7 +560,7 @@
       },
       {
         "v": "01-molecules/blocks/block-tile.mustache",
-        "w": "00-atoms/feedback/02-progress.mustache",
+        "w": "00-atoms/feedback/01-progress.mustache",
         "value": {}
       },
       {
