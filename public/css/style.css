@@ -757,12 +757,12 @@ h6 {
  * Links
  */
 a {
-  color: #b3b3b3;
+  color: #275EDE;
   text-decoration: none;
   outline: 0;
   transition: all 0.2s ease; }
   a:hover, a:focus {
-    color: #787878; }
+    color: #978B60; }
 
 /*------------------------------------*    #LINKS
 \*------------------------------------*/
@@ -915,6 +915,13 @@ hr {
 abbr {
   border-bottom: 1px dotted #b3b3b3;
   cursor: help; }
+
+/**
+ * Marked text
+ */
+mark {
+  color: #333;
+  background-color: #FFE678; }
 
 /*------------------------------------*    $COMPONENTS
 \*------------------------------------*/
